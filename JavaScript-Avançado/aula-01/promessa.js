@@ -11,12 +11,13 @@ const promessa = new Promise((resolve, reject) => {
         }
     })
 }) //criando uma promessa
-
+ 
 promessa.then((retornoDoResolveDaPromise) => {
     console.log('Deu certo:', retornoDoResolveDaPromise)
 })
 .catch(() => {
     console.log('Deu ruim:', erro)
-}).finally(() => {
+})
+.finally(() => {
     console.log('Isso aqui vai ser executado independente do sucesso ou fracasso da promessa final dela.')
 })
